@@ -307,7 +307,7 @@
 }
 
 .membership__title {
-  max-width: 803px;
+  max-width: 574px;
   margin: 0 auto;
   text-align: center;
   font-size: 44px;
@@ -347,16 +347,18 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 80px;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px 80px;
-  gap: 80px;
 }
 .footer__column {
   display: flex;
@@ -364,11 +366,13 @@
   gap: 20px;
 }
 .footer__column_content_hours {
-  margin-left: 80px;
+  position: absolute;
+  right: 250px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
-  position: relative;
+  margin-left: 80px;
 }
 
 .footer__logo {
@@ -379,8 +383,7 @@
 
 .footer__column-heading {
   margin: 0px;
-  padding: 0px;
-  color: white;
+  margin-bottom: 20px;
 }
 
 .footer__list {
@@ -391,14 +394,12 @@
 }
 
 .footer__list-item {
-  color: white;
   display: flex;
-  align-items: center;
-  margin: 0px;
-}
-.footer__list-item p {
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 16px 0 0;
   margin: 0;
-  padding-bottom: 16px;
+  font-size: small;
 }
 
 .footer__social-icon {
@@ -407,11 +408,14 @@
   margin-right: 10px;
 }
 .footer__column-link {
-  color: #ffffff;
+  display: flex;
   text-decoration: none;
   font-size: 16px;
+  color: white;
+  column-gap: 10px;
+  align-items: center;
 }
 .footer__copyright {
-  color: white;
-  padding: 0 80px 60px;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
